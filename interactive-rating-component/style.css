@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  color: #fff;
+}
+
+body {
+  background-color: #141519;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.card-container {
+  background-color: #19202a;
+  width: 400px;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.star-container {
+  width: fit-content;
+  padding: 15px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 22%);
+  display: grid;
+  place-items: center;
+}
+.heading {
+  margin: 15px 0px;
+}
+
+.para {
+  text-align: justify;
+  font-size: 15px;
+  line-height: 25px;
+  color: hsl(216, 12%, 54%);
+}
+
+.ratings {
+  margin: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ratings > span {
+  padding: 15px 20px;
+  background-color: hsl(213, 19%, 22%);
+  border-radius: 50%;
+  cursor: pointer;
+  color: hsl(216, 12%, 54%);
+}
+#selected {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+.ratings > span:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: #fff;
+}
+
+/* SUBMIT BTN STYLING */
+.submit-btn {
+  background-color: hsl(25, 97%, 53%);
+  padding: 15px 20px;
+  width: 100%;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #fff;
+  color: hsl(25, 97%, 53%);
+}
+
+.submit-card-container {
+  display: none;
+  place-items: center;
+}
+.selected-rating {
+  margin: 40px 0px 30px 0px;
+  background-color: hsl(213, 19%, 22%);
+  padding: 10px 25px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: hsl(25, 97%, 53%);
+}
+.thank-you {
+  margin: 15px;
+  font-size: 35px;
+}
+.thank-you-note {
+  text-align: center;
+  font-weight: 500;
+}
