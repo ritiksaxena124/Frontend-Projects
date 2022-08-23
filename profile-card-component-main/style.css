@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background: url(./images/bg-pattern-bottom.svg) bottom -700px right -100px
+      no-repeat,
+    url(./images/bg-pattern-top.svg) top -550px left -250px no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card {
+  width: 350px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin: 0 25px;
+}
+
+.top-section {
+  height: 150px;
+  width: 100%;
+  background-image: url("./images/bg-pattern-card.svg");
+  border-radius: 15px 15px 0px 0px;
+}
+.bottom-section {
+  padding: 0px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 0px 0px 15px 15px;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-top: -50px;
+  width: 120px;
+  border: 5px solid #fff;
+}
+.name {
+  margin: 10px 0px;
+  font-weight: 700;
+  font-size: 25px;
+}
+.location,
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+}
+
+.location {
+  font-size: 18px;
+}
+
+hr {
+  border: 1px solid hsl(0, 0%, 95%);
+  background-color: hsl(0, 0%, 95%);
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.info-box {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0px 30px 0px;
+}
+
+.info {
+  text-align: center;
+  cursor: pointer;
+}
+
+.count {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.type {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: hsl(0, 0%, 59%);
+  margin-top: 6px;
+}
