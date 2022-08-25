@@ -1,6 +1,9 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+
+
 }
 body {
   margin: 0;
@@ -9,41 +12,51 @@ body {
   place-items: center;
   height: 100vh;
 }
+
 .card {
-  width: 350px;
+  display: flex;
+  width: 650px;
+  min-height: 405px;
   background-color: #fff;
   border-radius: 10px;
-  margin: 20px 10px;
   box-shadow: 1px 5px 70px 1px rgba(0, 0, 0, 0.2);
 }
 
 .image-container {
-  width: 100%;
+  width: 300px;
+  flex: 1;
+  background-image: url("./images/image-product-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
 }
 
-.image-container > img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 10px 10px 0px 0px;
-}
+
 
 /* INFORMATION STYLING */
 .info {
-  padding: 30px;
+  padding: 20px 35px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .tag {
-    letter-spacing: 3px;
+  letter-spacing: 3px;
+  color: hsl(228, 12%, 48%);
+  font-size: 12px;
 }
 .heading {
   font-size: 35px;
-  margin: 18px 0px;
+  margin: 20px 0px;
+  font-family: 'Fraunces', serif;
 }
 
 .para {
   color: hsl(228, 12%, 48%);
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 15px;
+  line-height: 25px;
 }
 
 .cost {
@@ -52,14 +65,16 @@ body {
   display: flex;
   align-items: center;
   font-weight: 700;
-  margin: 18px 0px;
+  margin: 20px 0px;
+  font-family: 'Fraunces', serif;
 }
 
 .prev-cost {
-  font-size: 17px;
+  font-size: 15px;
   margin-left: 15px;
   text-decoration: line-through;
   font-weight: normal;
+  color: hsl(228, 12%, 48%);
 }
 
 /* ADD TO CART BUTTON STYLING */
@@ -79,4 +94,30 @@ body {
 
 .cart-img {
   margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    display: grid;
+    width: 350px;
+    margin: 10px 10px;
+  }
+
+  .image-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+    background-image: url("./images/image-product-mobile.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .heading {
+    font-size: 30px;
+    margin: 15px 0px;
+  }
+
+  .cost {
+    margin: 15px 0px;
+  }
 }
