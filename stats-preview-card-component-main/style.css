@@ -15,7 +15,7 @@ body {
 .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  width: 700px;
+  max-width: 1115px;
   background-color: #1c1938;
   border-radius: 10px;
   margin: 20px;
@@ -23,21 +23,25 @@ body {
 
 /* SECTION ONE STYLING */
 .section-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 40px 50px 40px 45px;
+  height: 100%;
 }
 .heading {
-  font-size: 23px;
+  font-size: 1.8rem;
   margin-bottom: 20px;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 40px;
 }
 .heading > span {
   color: hsl(277, 64%, 61%);
 }
 
 .para {
-  font-size: 10px;
-  line-height: 17px;
+  font-size: 1.05em;
+  line-height: 30px;
   color: hsla(0, 0%, 100%, 0.6);
   font-family: "Lexend Deca", sans-serif;
 }
@@ -45,14 +49,14 @@ body {
 .stats {
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
+  margin-top: 90px;
 }
 .stat > h3 {
-  font-size: 15px;
+  font-size: 1.2em;
 }
 .stat > p {
-  font-size: 8px;
-  margin-top: 4px;
+  font-size: 0.6em;
+  margin-top: 7px;
   color: hsla(0, 0%, 100%, 0.6);
   letter-spacing: 1px;
 }
@@ -61,25 +65,18 @@ body {
   position: relative;
   height: 100%;
   width: 100%;
+  background-color: hsl(277, 64%, 61%);
+  border-radius: 0px 10px 10px 0px;
 }
 
 .section-two > img {
   width: 100%;
   height: 100%;
   border-radius: 0px 10px 10px 0px;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-}
-
-.section-two::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(81, 8, 126, 0.541);
-  z-index: 1;
-  border-radius: 0px 10px 10px 0px;
-
+  mix-blend-mode: multiply;
+  opacity: 75%;
 }
 
 @media screen and (max-width: 810px) {
@@ -91,35 +88,31 @@ body {
     border-radius: 10px;
     text-align: center;
   }
-.section-one > .heading {
+  .section-one > .heading {
     font-size: 25px;
-}
+  }
 
-.para {
+  .para {
     font-size: 14px;
     line-height: 24px;
-}
+  }
   .section-two {
     order: -1;
     border-radius: 10px 10px 0px 0px;
+    height: 300px;
   }
 
   .section-two > img {
     border-radius: 10px 10px 0px 0px;
-  }
-  .section-two::before {
-    border-radius: 10px 10px 0px 0px;
-  
   }
 
   .stats {
     display: flex;
     flex-direction: column;
   }
-.stat {
+  .stat {
     margin: 15px 0px;
-
-}
+  }
   .stat > h3 {
     font-size: 25px;
   }
