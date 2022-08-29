@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url("./images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
+  margin: 0 auto;
+  padding: 15px 70px;
+  display: flex;
+  flex-direction: column;
+}
+.nav {
+  height: 50px;
+}
+.logo {
+  width: 200px;
+}
+
+/* HERO SECTION */
+.hero {
+  justify-content: space-between;
+  color: #fff;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.left-section {
+  flex: 1.9;
+}
+/* LEFT SECTION STYLING */
+.left-section > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* RIGHT SECTION STYLING */
+.right-section {
+  flex: 1;
+  padding: 50px 40px;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+}
+.para {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  margin: 25px 0px;
+  line-height: 25px;
+}
+
+/* REGISTER BTN STYLING */
+.register-btn {
+  border: none;
+  padding: 15px 25px;
+  border-radius: 30px;
+  width: 150px;
+  color: hsl(257, 40%, 49%);
+  cursor: pointer;
+}
+.register-btn:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+
+/* FOOTER STYLING */
+.footer {
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: auto;
+}
+
+.footer > img {
+  height: 40px;
+  padding: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid #000;
+  border-radius: 50%;
+  filter: brightness(0) saturate(100%) invert(91%) sepia(100%) saturate(0%);
+}
+
+.footer > img:hover {
+  border: 1px solid hsl(300, 69%, 71%);
+  filter: invert(68%) sepia(71%) saturate(1139%) hue-rotate(254deg)
+    brightness(104%) contrast(82%);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 15px 40px;
+  }
+
+  .heading {
+    font-size: 27px;
+  }
+  .right-section {
+    padding: 50px 20px;
+  }
+}
+@media screen and (max-width: 769px) {
+  body{
+    padding: 15px 30px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .left-section > img {
+    height: 350px;
+  }
+
+  .right-section {
+    text-align: center;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo {
+    width: 130px;
+  }
+
+  .right-section {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .heading {
+    font-size: 23px;
+  }
+
+  .register-btn {
+    width: 200px;
+    padding: 12px;
+  }
+}
